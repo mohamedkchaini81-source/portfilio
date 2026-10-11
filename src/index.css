@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-red: #e8192c;
+    --color-red-dim: #b91224;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0a0a0b;
+    color: #e3e2e3;
+    font-family: 'Urbanist', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #e8192c;
+    color: #ffffff;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .font-azonix {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .text-red {
+    color: #e8192c;
+  }
+
+  .bg-red {
+    background-color: #e8192c;
+  }
+
+  .border-red {
+    border-color: #e8192c;
+  }
+
+  .glow-red {
+    box-shadow: 0 0 20px rgba(232, 25, 44, 0.3);
+  }
+
+  .glow-red-lg {
+    box-shadow: 0 0 40px rgba(232, 25, 44, 0.2);
+  }
+}
